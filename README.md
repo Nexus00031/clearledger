@@ -62,3 +62,5 @@ Start with the [local setup guide](docs/developer-guide/local-setup.md), [archit
 The web application and contracts are currently deployed on Stellar Testnet for evaluation and integration. This is not a mainnet financial service. The contracts have not been formally audited, and testnet assets have no promised redemption value. Do not use real funds. Review the [contract limitations](https://github.com/Stellar-Clear/clearledger-contracts/blob/main/docs/LIMITATIONS.md) and [security policy](https://github.com/Stellar-Clear/clearledger-contracts/blob/main/SECURITY.md) before integrating.
 
 Use testnet wallets and assets only. Never put private keys or recovery phrases in environment files or source control.
+
+For tested keyboard flows, known limitations and the reporting route, read the [accessibility statement](docs/ACCESSIBILITY.md).

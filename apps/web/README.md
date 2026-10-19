@@ -123,6 +123,14 @@ From `apps/web`:
 4. Use the app navbar wallet button to connect.
 5. Register an SME or buyer profile and complete the protocol verification step before gated actions. Registration is not a substitute for legal or commercial due diligence.
 
+## Accessibility
+
+See the [accessibility statement](../../docs/ACCESSIBILITY.md) for the tested
+keyboard flows, known limitations, browser and assistive-technology coverage,
+and the route for reporting an accessibility problem. The underlying tests live
+in this package and can be run with `pnpm test` (Vitest) or `pnpm test:e2e`
+(Playwright, desktop Chromium).
+
 ## API documentation
 
 The indexer OpenAPI spec lives at [`../../docs/openapi/indexer.yaml`](../../docs/openapi/indexer.yaml). It documents health, SEP-10 authentication, invoice, stats, event, and pool endpoints.
