@@ -20,6 +20,7 @@ Before opening or requesting review of a pull request, confirm the following:
 - [ ] TypeScript type-checking passes with no errors (`pnpm typecheck`)
 - [ ] Linting passes (`pnpm --filter web lint` / `go vet ./...` and `golangci-lint run`)
 - [ ] All existing and new tests pass (`pnpm test` / `go test -race ./...`)
+- [ ] Internal Markdown links pass (`pnpm check:links`)
 - [ ] No `TODO`, stub, or placeholder code is present
 - [ ] TypeScript changes use strict types (no `any`)
 - [ ] New Go code is formatted with `gofmt`
@@ -52,6 +53,22 @@ ok   clearledger/indexer/config   0.018s
 ```
 
 Database integration tests require `TEST_DATABASE_URL`; for Docker Compose use `postgres://postgres:<POSTGRES_PASSWORD>@localhost:5433/postgres?sslmode=disable`. Without that variable, those tests are skipped.
+
+## Documentation links
+
+CI checks every tracked Markdown file for broken relative links and images, missing local files and directories, and invalid heading anchors. External `http(s)` and `mailto` links are not checked.
+
+Run the same check locally before opening a PR:
+
+```bash
+pnpm check:links
+```
+
+The checker prints each failure as `source:line -> broken target` and exits non-zero when any link is broken. Its own tests cover a valid document, a missing file and a missing anchor:
+
+```bash
+pnpm test:links
+```
 
 ## Git Workflow Guidelines
 

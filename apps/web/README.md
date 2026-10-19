@@ -28,7 +28,7 @@ See the root [`README.md`](../../README.md) for the project overview and testnet
 
 ## Environment setup
 
-The web app has a frontend-only env template at [`.env.example`](.env.example). Copy it to [`.env.local`](.env.local) for a web-only setup:
+The web app has a frontend-only env template at [`.env.example`](.env.example). Copy it to `.env.local` for a web-only setup:
 
 ```bash
 cp .env.example .env.local
