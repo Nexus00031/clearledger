@@ -30,6 +30,11 @@ ClearLedger is an open-source Stellar testnet prototype for coordinating invoice
 - [Indexer API reference](developer-guide/indexer-api-reference.md)
 - [How to contribute](contributing/how-to-contribute.md)
 
+## Accessibility
+
+- [Accessibility statement](ACCESSIBILITY.md) — tested keyboard flows, known
+  limitations and how to report an accessibility problem.
+
 ## Testnet notice
 
 The application and contracts are experimental and have not been formally audited. Testnet activity is for evaluation only; it is not a live financing offer, and no yield or repayment is guaranteed. Never deposit real funds.
